@@ -1,0 +1,314 @@
+/* ============================= */
+/* CITY TOUR */
+/* ============================= */
+
+.city {
+  padding: 80px 0;
+}
+
+
+/* ============================= */
+/* TOUR GRID */
+/* ============================= */
+
+.tour-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 40px;
+}
+
+
+/* ============================= */
+/* TOUR */
+/* ============================= */
+
+.tour {
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  display: block;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* TOUR IMAGE */
+/* ============================= */
+
+.tour img {
+  width: 100%;
+  height: 240px;
+
+  padding: 0;
+  margin: 0;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  background: #000;
+
+  border: 2px solid #d4af37;
+  border-radius: 16px;
+
+  box-sizing: border-box;
+
+  transition: transform 0.3s ease;
+}
+
+
+/* ============================= */
+/* HOVER */
+/* ============================= */
+
+.tour:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ============================= */
+/* TOUR INFO */
+/* ============================= */
+
+.tour-info {
+  padding-top: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+/* ============================= */
+/* CITY NAME */
+/* ============================= */
+
+.tour-info small {
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* ============================= */
+/* DESTINATION NAME */
+/* ============================= */
+
+.tour-info b {
+  color: var(--ink);
+
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+
+/* ============================= */
+/* TOUR MORE */
+/* ============================= */
+
+.tour-more {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 24px;
+}
+
+
+/* ============================= */
+/* TOUR MORE BUTTON */
+/* ============================= */
+
+.tour-more button {
+  padding: 11px 24px;
+
+  border: 2px solid #d4af37;
+  border-radius: 999px;
+
+  background: transparent;
+
+  color: #d4af37;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* ============================= */
+/* BUTTON HOVER */
+/* ============================= */
+
+.tour-more button:hover {
+  background: #d4af37;
+
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .tour-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+  }
+
+  .tour img {
+    height: 220px;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  .city {
+    padding: 60px 0;
+  }
+
+
+  /* ============================= */
+  /* 2 KOLOM DI HP */
+  /* ============================= */
+
+  .tour-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin-top: 32px;
+  }
+
+
+  /* ============================= */
+  /* FRAME FOTO HP */
+  /* ============================= */
+
+  .tour img {
+    height: 150px;
+
+    border-radius: 12px;
+
+    border-width: 2px;
+  }
+
+
+  /* ============================= */
+  /* TOUR INFO HP */
+  /* ============================= */
+
+  .tour-info {
+    padding-top: 9px;
+
+    gap: 2px;
+  }
+
+
+  /* ============================= */
+  /* CITY NAME HP */
+  /* ============================= */
+
+  .tour-info small {
+    font-size: 10px;
+  }
+
+
+  /* ============================= */
+  /* DESTINATION NAME HP */
+  /* ============================= */
+
+  .tour-info b {
+    font-size: 13px;
+
+    line-height: 1.25;
+  }
+
+
+  /* ============================= */
+  /* SEE ALL / CLOSE */
+  /* ============================= */
+
+  .tour-more {
+    margin-top: 18px;
+  }
+
+
+  .tour-more button {
+    padding: 10px 20px;
+
+    font-size: 14px;
+  }
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 380px) {
+
+  .tour-grid {
+    gap: 8px;
+  }
+
+
+  .tour img {
+    height: 135px;
+
+    border-radius: 10px;
+  }
+
+
+  .tour-info {
+    padding-top: 8px;
+  }
+
+
+  .tour-info small {
+    font-size: 9px;
+  }
+
+
+  .tour-info b {
+    font-size: 12px;
+  }
+
+
+  .tour-more button {
+    padding: 9px 18px;
+
+    font-size: 13px;
+  }
+
+}

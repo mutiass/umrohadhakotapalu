@@ -1,0 +1,382 @@
+/* =========================================
+   HAJI SECTION
+========================================= */
+
+.haji {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  color: #071b41;
+
+  background: linear-gradient(
+    115deg,
+    #9b7628 0%,
+    #b78f32 25%,
+    #d0aa4a 50%,
+    #e2c263 75%,
+    #f0d889 100%
+  );
+}
+
+
+/* =========================================
+   SOFT LIGHT EFFECT
+========================================= */
+
+.haji::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: -250px;
+  right: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  filter: blur(30px);
+}
+
+.haji::after {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  bottom: -200px;
+  left: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(92, 65, 15, 0.08);
+
+  filter: blur(25px);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.haji-inner {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.haji .eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #fff5d5;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+.haji h2 {
+  margin: 0 0 18px;
+
+  color: #071b41;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(42px, 5vw, 64px);
+
+  line-height: 1.1;
+}
+
+
+.haji-price {
+  margin-bottom: 10px;
+
+  color: #fff4c7;
+
+  font-size: clamp(30px, 4vw, 42px);
+
+  font-weight: 800;
+}
+
+
+.haji-inner > div:first-child > p {
+  margin: 0;
+
+  color: rgba(7, 27, 65, 0.7);
+
+  font-size: 16px;
+}
+
+
+/* =========================================
+   HAJI CARD
+========================================= */
+
+.haji-card {
+  position: relative;
+
+  padding: 36px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    145deg,
+    #0d315f,
+    #071b41
+  );
+
+  box-shadow:
+    0 20px 50px rgba(60, 40, 5, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Gold line */
+
+.haji-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 36px;
+  right: 36px;
+
+  height: 3px;
+
+  border-radius: 0 0 10px 10px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #f0d889,
+    transparent
+  );
+}
+
+
+/* =========================================
+   BOOKING INFORMATION
+========================================= */
+
+.haji-card b {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.haji-card strong {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #f0d889;
+
+  font-size: 32px;
+
+  line-height: 1.2;
+}
+
+
+.haji-card span {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.haji-card ul {
+  display: grid;
+
+  gap: 14px;
+
+  margin: 28px 0 0;
+
+  padding: 25px 0 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  list-style: none;
+}
+
+
+.haji-card li {
+  position: relative;
+
+  padding-left: 32px;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+.haji-card li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+  top: 2px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 21px;
+  height: 21px;
+
+  border-radius: 50%;
+
+  color: #071b41;
+
+  background: #f0d889;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.haji-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 28px 60px rgba(60, 40, 5, 0.3);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .haji-inner {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .haji h2 {
+    font-size: 48px;
+  }
+
+  .haji-card {
+    max-width: 650px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .haji {
+    padding: 70px 0;
+  }
+
+  .haji-inner {
+    gap: 35px;
+  }
+
+  .haji h2 {
+    font-size: 40px;
+  }
+
+  .haji-price {
+    font-size: 30px;
+  }
+
+  .haji-card {
+    padding: 28px;
+
+    border-radius: 20px;
+  }
+
+  .haji-card::before {
+    left: 28px;
+    right: 28px;
+  }
+
+  .haji-card strong {
+    font-size: 28px;
+  }
+
+  .haji-card li {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .haji {
+    padding: 60px 0;
+  }
+
+  .haji h2 {
+    font-size: 34px;
+  }
+
+  .haji-price {
+    font-size: 27px;
+  }
+
+  .haji-card {
+    padding: 24px;
+  }
+
+  .haji-card::before {
+    left: 24px;
+    right: 24px;
+  }
+}

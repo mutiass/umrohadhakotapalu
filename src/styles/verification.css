@@ -1,0 +1,127 @@
+/* =========================================
+   VERIFICATION FLOW
+========================================= */
+
+.verification-flow {
+  margin-top: 55px;
+  padding: 35px;
+  border: 1px solid rgba(7, 27, 65, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.verification-flow-title {
+  margin-bottom: 25px;
+}
+
+.verification-flow-title h3 {
+  margin: 8px 0 0;
+  color: #071b41;
+  font-size: 24px;
+}
+
+
+/* =========================================
+   FLOW PATH
+========================================= */
+
+.flow-path {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #071b41;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.flow-path span {
+  padding: 9px 14px;
+  border-radius: 10px;
+  background: rgba(217, 180, 74, 0.18);
+  border: 1px solid rgba(150, 115, 35, 0.2);
+}
+
+.flow-path b {
+  color: #967323;
+  font-size: 18px;
+}
+
+
+/* =========================================
+   DOWNLOAD HAJI PINTAR BUTTON
+========================================= */
+/* =========================================
+   DOWNLOAD HAJI PINTAR BUTTON
+========================================= */
+
+.license .btn.outline {
+  background: linear-gradient(
+    135deg,
+    #064e3b 0%,
+    #15803d 50%,
+    #4ade80 100%
+  );
+
+  color: #ffffff;
+
+  border: 1px solid #4ade80;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 6px 18px rgba(6, 78, 59, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.license .btn.outline:hover {
+  background: linear-gradient(
+    135deg,
+    #064e3b 0%,
+    #16a34a 50%,
+    #4ade80 100%
+  );
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 24px rgba(6, 78, 59, 0.35);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .verification-flow {
+    padding: 25px;
+  }
+
+  .verification-flow-title h3 {
+    font-size: 20px;
+  }
+
+  .flow-path {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flow-path span {
+    text-align: center;
+  }
+
+  .flow-path b {
+    text-align: center;
+    transform: rotate(90deg);
+  }
+
+}

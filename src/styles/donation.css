@@ -1,0 +1,911 @@
+/* ========================================
+   DONATION SECTION
+======================================== */
+
+.donation-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 90px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #06152f 0%,
+      #081d42 50%,
+      #06152f 100%
+    );
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.donation-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 90%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.donation-header {
+  margin-bottom: 45px;
+
+  text-align: center;
+}
+
+.donation-label {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: #d8aa4b;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.donation-header h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.donation-quote {
+  margin: 12px 0 0;
+
+  color: #cbd3df;
+
+  font-size: 17px;
+
+  font-style: italic;
+}
+
+
+/* ========================================
+   MAIN CARD
+======================================== */
+
+.donation-card {
+  display: grid;
+
+  grid-template-columns: 40% 60%;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(216, 170, 75, 0.35);
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0a2348 0%,
+      #071a38 55%,
+      #06152f 100%
+    );
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ========================================
+   PHOTO WRAPPER
+======================================== */
+
+.donation-photo-wrapper {
+  min-height: 100%;
+
+  padding: 18px;
+}
+
+
+/* ========================================
+   PHOTO FRAME
+======================================== */
+
+.donation-photo-frame {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  min-height: 570px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(216, 170, 75, 0.65);
+
+  border-radius: 15px;
+}
+
+
+/* ========================================
+   SCHOOL PHOTO
+======================================== */
+
+.donation-photo {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.6s ease;
+}
+
+.donation-photo-frame:hover .donation-photo {
+  transform: scale(1.035);
+}
+
+
+/* ========================================
+   PHOTO OVERLAY
+======================================== */
+
+.donation-photo-overlay {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding: 60px 22px 22px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(4, 17, 38, 0.95),
+      rgba(4, 17, 38, 0.55),
+      transparent
+    );
+}
+
+.donation-photo-overlay span {
+  color: #d8aa4b;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.donation-photo-overlay strong {
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.donation-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-width: 0;
+
+  padding: 45px 45px 45px 25px;
+}
+
+
+/* ========================================
+   TITLE ROW
+======================================== */
+
+.donation-title-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+
+/* ========================================
+   AISYAH LOGO
+======================================== */
+
+.donation-logo {
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 82px;
+  height: 82px;
+
+  padding: 7px;
+
+  border: 1px solid rgba(216, 170, 75, 0.5);
+
+  border-radius: 50%;
+
+  background:
+    rgba(216, 170, 75, 0.06);
+
+  box-sizing: border-box;
+}
+
+.donation-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* ========================================
+   PROGRAM LABEL
+======================================== */
+
+.donation-program-label {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #d8aa4b;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.donation-content h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 29px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.donation-content h4 {
+  margin: 5px 0 0;
+
+  color: #cbd3df;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   HIGHLIGHT
+======================================== */
+
+.donation-highlight {
+  max-width: 600px;
+
+  margin: 22px 0 0;
+
+  color: #dce2eb;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   DIVIDER
+======================================== */
+
+.donation-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 20px 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(216, 170, 75, 0.65),
+      rgba(216, 170, 75, 0)
+    );
+}
+
+
+/* ========================================
+   INSTITUTION
+======================================== */
+
+.donation-institution {
+  margin-bottom: 13px;
+}
+
+.donation-institution span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.donation-institution p {
+  margin: 0;
+
+  color: #aeb9c9;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   BSI ACCOUNT
+======================================== */
+
+.donation-bank {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  width: 100%;
+
+  padding: 14px 18px;
+
+  border: 1px solid rgba(255, 225, 150, 0.7);
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #8b5708 0%,
+      #b87817 35%,
+      #d8aa4b 65%,
+      #b87817 100%
+    );
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.2);
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   BSI LOGO
+======================================== */
+
+.donation-bank-logo {
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 55px;
+  height: 55px;
+
+  padding: 5px;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+.donation-bank-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* ========================================
+   BSI INFORMATION
+======================================== */
+
+.donation-bank-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.donation-bank-info span {
+  color: #3e2a0a;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.donation-bank-info strong {
+  color: #071a38;
+
+  font-size: 23px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.donation-description {
+  margin-top: 18px;
+}
+
+.donation-description p {
+  margin: 0;
+
+  color: #cbd3df;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* ========================================
+   PROGRAM KEGIATAN
+======================================== */
+
+.donation-program {
+  margin-top: 18px;
+}
+
+.donation-program h5 {
+  margin: 0 0 10px;
+
+  color: #d8aa4b;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   PROGRAM LIST
+======================================== */
+
+.donation-program-list {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px 20px;
+}
+
+.donation-program-list div {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+.donation-program-list span {
+  flex-shrink: 0;
+
+  color: #d8aa4b;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.donation-program-list p {
+  margin: 0;
+
+  color: #d6dce6;
+
+  font-size: 11.5px;
+
+  line-height: 1.45;
+}
+
+
+/* ========================================
+   CONFIRMATION
+======================================== */
+
+.donation-confirmation {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 20px;
+
+  padding: 13px 16px;
+
+  border: 1px solid rgba(255, 225, 150, 0.65);
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #704200 0%,
+      #a96f12 40%,
+      #c99532 70%,
+      #8c5608 100%
+    );
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.18);
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   CONFIRMATION ICON
+======================================== */
+
+.donation-confirmation-icon {
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  color: #071a38;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  background: #f1d27a;
+}
+
+
+/* ========================================
+   CONFIRMATION CONTENT
+======================================== */
+
+.donation-confirmation-content {
+  min-width: 0;
+}
+
+.donation-confirmation span {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #fff0c5;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.donation-confirmation strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.donation-confirmation p {
+  margin: 1px 0 0;
+
+  color: #071a38;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+
+/* ========================================
+   BOTTOM MESSAGE
+======================================== */
+
+.donation-bottom {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 14px;
+
+  max-width: 800px;
+
+  margin: 32px auto 0;
+
+  text-align: center;
+}
+
+.donation-bottom span {
+  color: #d8aa4b;
+
+  font-size: 15px;
+}
+
+.donation-bottom p {
+  margin: 0;
+
+  color: #cbd3df;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 950px) {
+
+  .donation-card {
+    grid-template-columns: 1fr;
+  }
+
+
+  .donation-photo-wrapper {
+    padding: 20px 20px 0;
+  }
+
+
+  .donation-photo-frame {
+    height: 400px;
+
+    min-height: 400px;
+  }
+
+
+  .donation-content {
+    padding: 30px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .donation-section {
+    padding: 65px 0;
+  }
+
+
+  .donation-container {
+    width: 92%;
+  }
+
+
+  .donation-header {
+    margin-bottom: 30px;
+  }
+
+
+  .donation-label {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .donation-header h2 {
+    font-size: 31px;
+  }
+
+
+  .donation-quote {
+    font-size: 15px;
+  }
+
+
+  .donation-card {
+    border-radius: 18px;
+  }
+
+
+  .donation-photo-wrapper {
+    padding: 15px 15px 0;
+  }
+
+
+  .donation-photo-frame {
+    height: 290px;
+
+    min-height: 290px;
+
+    border-radius: 13px;
+  }
+
+
+  .donation-photo-overlay {
+    padding: 50px 15px 15px;
+  }
+
+
+  .donation-photo-overlay strong {
+    font-size: 14px;
+  }
+
+
+  .donation-content {
+    padding: 25px 20px 25px;
+  }
+
+
+  .donation-title-row {
+    gap: 12px;
+  }
+
+
+  .donation-logo {
+    width: 65px;
+    height: 65px;
+
+    padding: 5px;
+  }
+
+
+  .donation-program-label {
+    font-size: 9px;
+
+    letter-spacing: 1.3px;
+  }
+
+
+  .donation-content h3 {
+    font-size: 21px;
+  }
+
+
+  .donation-content h4 {
+    font-size: 12px;
+  }
+
+
+  .donation-highlight {
+    margin-top: 17px;
+
+    font-size: 13px;
+  }
+
+
+  .donation-divider {
+    margin: 17px 0;
+  }
+
+
+  .donation-institution span {
+    font-size: 13px;
+  }
+
+
+  .donation-institution p {
+    font-size: 11px;
+  }
+
+
+  .donation-bank {
+    gap: 12px;
+
+    padding: 12px;
+  }
+
+
+  .donation-bank-logo {
+    width: 47px;
+    height: 47px;
+  }
+
+
+  .donation-bank-info strong {
+    font-size: 19px;
+  }
+
+
+  .donation-program-list {
+    grid-template-columns: 1fr;
+
+    gap: 7px;
+  }
+
+
+  .donation-confirmation {
+    gap: 10px;
+
+    padding: 12px;
+  }
+
+
+  .donation-confirmation-icon {
+    width: 34px;
+    height: 34px;
+
+    font-size: 15px;
+  }
+
+
+  .donation-confirmation strong {
+    font-size: 12px;
+  }
+
+
+  .donation-confirmation p {
+    font-size: 12px;
+  }
+
+
+  .donation-bottom {
+    gap: 8px;
+
+    margin-top: 25px;
+  }
+
+
+  .donation-bottom p {
+    font-size: 12px;
+  }
+
+}

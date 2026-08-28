@@ -1,0 +1,355 @@
+/* ========================================
+   SAVING SECTION
+======================================== */
+
+.saving {
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #8a5a00 0%,
+    #b87900 25%,
+    #d99a18 50%,
+    #f0c34f 75%,
+    #ffe08a 100%
+  );
+
+  color: #071b41;
+
+  padding: 80px 0;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.saving .container {
+  width: min(1160px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   SAVING INNER
+======================================== */
+
+.saving-inner {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+/* ========================================
+   EYEBROW
+======================================== */
+
+.saving .eyebrow {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  color: #fff4c2;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.saving h2 {
+  margin: 0 0 18px;
+
+  max-width: 600px;
+
+  font-size: clamp(30px, 4vw, 46px);
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  color: #071b41;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.saving p {
+  max-width: 600px;
+
+  margin: 0 0 28px;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: #182b4d;
+}
+
+
+/* ========================================
+   SAVING FEATURES
+======================================== */
+
+.saving-features {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* ========================================
+   FEATURE ITEM
+======================================== */
+
+.saving-features span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  width: fit-content;
+
+  padding: 10px 16px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  color: #071b41;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  backdrop-filter: blur(5px);
+}
+
+
+/* ========================================
+   CHECK ICON
+======================================== */
+
+.saving-features span::first-letter {
+  color: #7a4b00;
+}
+
+
+/* ========================================
+   CALCULATOR CARD
+======================================== */
+
+.saving .calculator,
+.saving .calculator-card {
+  background: linear-gradient(
+    145deg,
+    #071b41 0%,
+    #0b2855 55%,
+    #12376d 100%
+  );
+
+  color: white;
+
+  border: 2px solid #e6b93f;
+
+  border-radius: 22px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 20px 45px rgba(62, 38, 0, 0.25),
+    0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================================
+   CALCULATOR INPUT
+======================================== */
+
+.saving input,
+.saving select {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d6a72d;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #071b41;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+
+/* ========================================
+   INPUT FOCUS
+======================================== */
+
+.saving input:focus,
+.saving select:focus {
+  border-color: #f5c84c;
+
+  box-shadow: 0 0 0 3px rgba(245, 200, 76, 0.25);
+}
+
+
+/* ========================================
+   CALCULATOR LABEL
+======================================== */
+
+.saving label {
+  color: #ffe49a;
+
+  font-weight: 700;
+}
+
+
+/* ========================================
+   CALCULATOR BUTTON
+======================================== */
+
+.saving button {
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 12px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #c88600,
+    #f0b92f,
+    #ffe08a
+  );
+
+  color: #071b41;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* ========================================
+   BUTTON HOVER
+======================================== */
+
+.saving button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(74, 44, 0, 0.25);
+}
+
+
+/* ========================================
+   CALCULATOR RESULT
+======================================== */
+
+.saving .result,
+.saving .calculator-result {
+  margin-top: 20px;
+
+  padding: 18px;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #f5c84c,
+    #ffe49a
+  );
+
+  color: #071b41;
+
+  border: 1px solid #fff0b5;
+}
+
+
+/* ========================================
+   RESPONSIVE TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .saving-inner {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .saving h2 {
+    max-width: 700px;
+  }
+
+}
+
+
+/* ========================================
+   RESPONSIVE MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .saving {
+    padding: 60px 0;
+  }
+
+  .saving .container {
+    width: min(100% - 28px, 1160px);
+  }
+
+  .saving-inner {
+    gap: 30px;
+  }
+
+  .saving h2 {
+    font-size: 30px;
+  }
+
+  .saving p {
+    font-size: 15px;
+  }
+
+  .saving .calculator,
+  .saving .calculator-card {
+    padding: 22px;
+
+    border-radius: 18px;
+  }
+
+  .saving-features span {
+    width: 100%;
+
+    font-size: 14px;
+  }
+
+}

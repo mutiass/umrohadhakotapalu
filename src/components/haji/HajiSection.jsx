@@ -21,11 +21,11 @@ function HajiSection() {
             <strong>Rp125.000.000</strong>
             <span>Terbit nomor porsi</span>
           </div>
-
           <ul>
             <li>Program 21–27 hari</li>
             <li>Paspor + vaksin + dam + hewan qurban</li>
- <li>Maktabah Mina</li>
+ <li>Maktabah Mina 101 VIP</li>
+<li>Hotel Mekkah Madinah bintang 5*</li>
             <li>Free umroh</li>
           </ul>
         </div>

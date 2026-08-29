@@ -11,6 +11,9 @@ function SavingSection() {
             INFORMASI TABUNGAN
         ======================================== */}
         <div>
+<strong> BISA CASH </strong> </div>
+<div>
+<strong> atau menggunakan sistem tabungan </strong> </div>
           <div className="eyebrow">
             ESTIMASI TABUNGAN
           </div>

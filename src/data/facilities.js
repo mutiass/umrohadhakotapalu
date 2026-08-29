@@ -3,10 +3,12 @@ export const facilities = [
   ["◈", "VIP Lounge Bandara Sultan Hasanuddin"],
   ["✈", "Makassar langsung Jeddah, tanpa transit"],
   ["♙", "Handling & pendamping Tour Leader"],
-  ["✓", "VISA, Siskopatuh & Asuransi perjalanan"],
+  ["✓", "Provider VISA & LA"],
+  ["✓", "Siskopatuh"],
   ["♨", "Catering 3× sehari menu Indonesia"],
   ["◉", "Air zam-zam 5 liter"],
   ["◎", "City Tour Mekkah & Madinah"],
   ["♡", "Bus Executive AC"],
   ["✦", "Muthowif berpengalaman"],
+  ["♡", "Asuransi perjalanan"],
 ];

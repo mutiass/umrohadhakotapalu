@@ -25,6 +25,7 @@ function HajiSection() {
           <ul>
             <li>Program 21–27 hari</li>
             <li>Paspor + vaksin + dam + hewan qurban</li>
+ <li>Maktabah Mina</li>
             <li>Free umroh</li>
           </ul>
         </div>
